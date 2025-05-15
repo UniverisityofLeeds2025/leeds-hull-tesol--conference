@@ -1,0 +1,406 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LEEDS-HULL TESOL 2025 CONFERENCE</title>
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    header {
+      background: url('a89fbe42b3243dd295dcb72cc7d61372.jpg') no-repeat center center/cover;
+      height: 100vh;
+      position: relative;
+      color: white;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      overflow: hidden;
+    }
+    header::after {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background-color: rgba(0, 0, 0, 0.5);
+      z-index: 0;
+    }
+    .logo {
+      position: absolute;
+      top: 30px;
+      left: 30px;
+      z-index: 1;
+    }
+    .logo img {
+      max-width: 150px;
+      height: auto;
+    }
+    header h1 {
+      position: relative;
+      z-index: 1;
+      font-size: 4em;
+      font-weight: 800;
+      margin: 0;
+    }
+    nav {
+      background-color: #ffffff;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      padding: 15px 0;
+      border-bottom: 2px solid #d9e2ef;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+    nav li {
+      display: inline;
+    }
+    nav a {
+      color: #000000;
+      text-decoration: none;
+      font-weight: bold;
+      padding: 8px 12px;
+      border-radius: 8px;
+      transition: background-color 0.3s;
+    }
+    nav a:hover {
+      background-color: #d9e2ef;
+    }
+    main {
+      background: linear-gradient(to bottom, #e8f1ff 0%, #ffffff 100%);
+      padding: 60px 20px;
+    }
+    .card {
+      background: rgba(255, 255, 255, 0.85);
+      border-radius: 20px;
+      padding: 40px;
+      margin: 40px auto;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      max-width: 1000px;
+      backdrop-filter: blur(4px);
+    }
+    .card h2 {
+      color: #004080;
+      margin-bottom: 20px;
+      font-size: 2em;
+    }
+    .card p {
+      color: #333333;
+      font-size: 1.1em;
+    }
+    footer {
+      background-color: #ffffff;
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9em;
+      border-top: 2px solid #d9e2ef;
+      margin-top: 40px;
+    }
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 2.5em;
+      }
+      nav ul {
+        flex-direction: column;
+        align-items: center;
+      }
+      .card {
+        padding: 20px;
+      }
+    }
+  
+/* Schedule Section Styles */
+.schedule-section {
+  max-width: 1000px;
+  margin: auto;
+  text-align: center;
+  margin-top: 60px;
+}
+.schedule-section h2 {
+  color: #004080;
+  margin-bottom: 10px;
+}
+.schedule-section p {
+  color: #555;
+  margin-bottom: 40px;
+}
+.session-group {
+  text-align: left;
+  margin-bottom: 50px;
+}
+.session-title {
+  background-color: #cfe5ff;
+  display: inline-block;
+  padding: 8px 16px;
+  border-radius: 12px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #004080;
+}
+.session-card {
+  background: rgba(255, 255, 255, 0.85);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  border-radius: 15px;
+  padding: 20px 30px;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+}
+.session-time {
+  font-weight: bold;
+  color: #555;
+  margin-bottom: 10px;
+}
+.session-name {
+  font-weight: bold;
+  color: #004080;
+  font-size: 1.2em;
+  margin-bottom: 5px;
+}
+.session-location {
+  font-size: 0.95em;
+  color: #777;
+  margin-bottom: 5px;
+}
+.session-description {
+  font-size: 0.95em;
+  color: #555;
+}
+
+
+h2 {
+  color: #004080;
+  font-size: 2em;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.session-title {
+  background-color: #cfe5ff;
+  display: inline-block;
+  padding: 8px 16px;
+  border-radius: 12px;
+  font-weight: bold;
+  color: #004080;
+  font-size: 1.2em;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+</style>
+</head>
+<body>
+
+<header>
+  <div class="logo">
+    <img src="leeds_logo.png" alt="University of Leeds Logo">
+  </div>
+  <h1>LEEDS-HULL TESOL 2025 CONFERENCE</h1>
+</header>
+
+<nav>
+  <ul>
+    <li><a href="#about">About</a></li>
+    <li><a href="#schedule">Schedule</a></li>
+    <li><a href="#location">Location</a></li>
+    <li><a href="#abstracts">Abstracts</a></li>
+    <li><a href="#speakers">Speakers</a></li>
+    <li><a href="#highlights">Highlights</a></li>
+    <li><a href="#past">Past Conferences</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
+
+<main>
+  
+<section id="about" class="card">
+  <h2>About the Conference</h2>
+  <p><strong>LEEDS-HULL TESOL 2025 CONFERENCE</strong> is an annual conference held by and for TESOL students. This conference is a platform for TESOL students to engage in meaningful dialogues and exchange innovative ideas related to their ongoing research projects.</p>
+  
+  <p><strong>Venue</strong>: Depending on the kinds of presentations, all the talks will be delivered in one of these places:</p>
+  <ul>
+    <li>details comming soon</li>
+  
+  </ul>
+  
+  <p><strong>Date</strong>: 4th July</p>
+  
+  <p><strong>Time</strong>:</p>
+  <ul>
+    <li>details comming soon</li>  
+
+  </ul>
+</section>
+
+
+  
+
+  <section id="location" class="card">
+  <h2>Location</h2>
+  <p>The conference will be hosted at the University of Leeds campus, offering state-of-the-art facilities in the heart of the city.</p>
+
+  <!-- Google Maps – Parkinson Building, University of Leeds -->
+  <div class="map-container" style="margin-top: 20px;">
+    <iframe
+      src="https://maps.google.com/maps?q=Parkinson%20Building%20University%20of%20Leeds%20Leeds%20UK&output=embed"
+      width="100%" height="400"
+      style="border:0;"
+      allowfullscreen=""
+      loading="lazy">
+    </iframe>
+  </div>
+</section>
+
+
+ <main>
+  <!-- Abstracts Section -->
+ <section id="abstracts" class="card">
+  <h2>Presentation Abstracts</h2>
+  <input type="text" id="searchInput" onkeyup="searchTable()" placeholder="Search for presentations..." style="width: 90%; max-width: 500px; padding: 10px; margin: 20px auto; display: block; border-radius: 10px; border: 1px solid #ccc;">
+  
+  <div style="overflow-x:auto;">
+    <table id="abstractsTable" style="width:90%; margin:auto; border-collapse: separate; border-spacing: 0 10px;">
+      <thead style="background-color: #d0e7ff; color: #004080;">
+        <tr>
+          <th style="padding: 12px;">Title</th>
+          <th style="padding: 12px;">Presenter</th>
+          <th style="padding: 12px;">Room</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>Waiting for you ～</td><td></td><td></td></tr>
+              </tbody>
+    </table>
+  </div>
+
+
+</section>
+<div style="text-align: center; margin-top: 30px;">
+  <a href="https://forms.office.com/Pages/ResponsePage.aspx?id=qO3qvR3IzkWGPlIypTW3y7aZjJmjxRJLjeEv40POXyBUNEE4UUVDTkFFODBGMFBJWTdDWUJWTEJFOC4u" target="_blank" style="background-color: #336699; color: white; padding: 14px 28px; border-radius: 30px; text-decoration: none; font-size: 18px; font-weight: bold; transition: background-color 0.3s ease;">
+    Submit My Abstract
+  </a>
+</div>
+
+<style>
+a:hover {
+  background-color: #5588cc;
+}
+</style>
+
+
+<script>
+function searchTable() {
+  var input, filter, table, tr, td, i, txtValue;
+  input = document.getElementById("searchInput");
+  filter = input.value.toUpperCase();
+  table = document.getElementById("abstractsTable");
+  tr = table.getElementsByTagName("tr");
+  for (i = 1; i < tr.length; i++) {
+    tr[i].style.display = "none";
+    var tds = tr[i].getElementsByTagName("td");
+    for (var j = 0; j < tds.length; j++) {
+      if (tds[j]) {
+        txtValue = tds[j].textContent || tds[j].innerText;
+        if (txtValue.toUpperCase().indexOf(filter) > -1) {
+          tr[i].style.display = "";
+          break;
+        }
+      }
+    }
+  }
+}
+</script>
+
+<style>
+#abstractsTable tbody tr {
+  background: white;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+}
+#abstractsTable tbody tr:hover {
+  background-color: #e6f2ff;
+  transform: scale(1.02);
+}
+#abstractsTable td {
+  background: white;
+  padding: 12px;
+  border-top: 1px solid #ccc;
+}
+</style>
+
+
+<script>
+function searchTable() {
+  var input, filter, table, tr, td, i, txtValue;
+  input = document.getElementById("searchInput");
+  filter = input.value.toUpperCase();
+  table = document.getElementById("abstractsTable");
+  tr = table.getElementsByTagName("tr");
+  for (i = 1; i < tr.length; i++) {
+    tr[i].style.display = "none";
+    var tds = tr[i].getElementsByTagName("td");
+    for (var j = 0; j < tds.length; j++) {
+      if (tds[j]) {
+        txtValue = tds[j].textContent || tds[j].innerText;
+        if (txtValue.toUpperCase().indexOf(filter) > -1) {
+          tr[i].style.display = "";
+          break;
+        }
+      }
+    }
+  }
+}
+</script>
+
+  <section id="speakers" class="card">
+  <h2>Keynote Speakers</h2>
+  <div style="max-width: 1000px; margin: auto; padding-top: 20px;">
+    <img src="graham_hall.png" alt="Graham Hall" style="width: 220px; float: left; margin: 0 30px 20px 0; border-radius: 12px; box-shadow: 0 4px 10px rgba(0,0,0,0.15); object-fit: cover;">
+    <h3 style="color: #336699; font-size: 28px; margin-bottom: 10px;">Professor Graham Hall</h3>
+    <p style="font-weight: bold; line-height: 1.7;">Professor Emeritus in Applied Linguistics and TESOL.</p>
+    <p style="line-height: 1.8;">Graham has been involved in English language teaching for over 30 years, as a teacher, teacher educator and researcher. His book <i>'Exploring English Language Teaching: language in action'</i> (2011/2017) was awarded the BAAL Book Prize, and he edited <i>ELT Journal</i> (2013–17) and <i>The Routledge Handbook of ELT</i> (2015).</p>
+    <p style="line-height: 1.8;">His most recent publication is <i>'Method and Postmethod in Language Teaching'</i> (Routledge; 2024). Graham's professional interests range from language classroom methodology to critical perspectives on TESOL, teacher research, and the inter-relationship between language learning and migration.</p>
+    <div style="clear: both;"></div>
+  </div>
+
+
+</section>
+
+<section id="highlights" class="card">
+    <h2>Conference Highlights</h2>
+    <p>Experience workshops, cultural exchange events, networking sessions, and more!</p>
+  </section>
+
+  <section id="past" class="card">
+    <h2>Past Conferences</h2>
+    <p>Over the years, the Leeds-Hull TESOL conference series has attracted thousands of participants worldwide, advancing the field of TESOL through collaboration and innovation.</p>
+  </section>
+
+  <section id="contact" class="card">
+    <h2>Contact Information</h2>
+    <p>For more information, email us at <a href="mailto:tesolconference@leeds-hull.edu">tesolconference@leeds-hull.edu</a> or follow us on our official social media pages.</p>
+  </section>
+</main>
+
+<footer>
+  <p>© 2025 LEEDS-HULL TESOL Conference. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
