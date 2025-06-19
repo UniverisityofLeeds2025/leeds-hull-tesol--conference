@@ -1,0 +1,931 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LEEDS-HULL TESOL 2025 CONFERENCE</title>
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    header {
+      background: url('a89fbe42b3243dd295dcb72cc7d61372.jpg') no-repeat center center/cover;
+      height: 100vh;
+      position: relative;
+      color: white;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      overflow: hidden;
+    }
+    header::after {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background-color: rgba(0, 0, 0, 0.5);
+      z-index: 0;
+    }
+    .logo {
+      position: absolute;
+      top: 30px;
+      left: 30px;
+      z-index: 1;
+    }
+    .logo img {
+      max-width: 150px;
+      height: auto;
+    }
+    header h1 {
+      position: relative;
+      z-index: 1;
+      font-size: 4em;
+      font-weight: 800;
+      margin: 0;
+    }
+    nav {
+      background-color: #ffffff;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      padding: 15px 0;
+      border-bottom: 2px solid #d9e2ef;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+    nav li {
+      display: inline;
+    }
+    nav a {
+      color: #000000;
+      text-decoration: none;
+      font-weight: bold;
+      padding: 8px 12px;
+      border-radius: 8px;
+      transition: background-color 0.3s;
+    }
+    nav a:hover {
+      background-color: #d9e2ef;
+    }
+    main {
+      background: linear-gradient(to bottom, #e8f1ff 0%, #ffffff 100%);
+      padding: 60px 20px;
+    }
+    .card {
+      background: rgba(255, 255, 255, 0.85);
+      border-radius: 20px;
+      padding: 40px;
+      margin: 40px auto;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      max-width: 1000px;
+      backdrop-filter: blur(4px);
+    }
+    .card h2 {
+      color: #004080;
+      margin-bottom: 20px;
+      font-size: 2em;
+    }
+    .card p {
+      color: #333333;
+      font-size: 1.1em;
+    }
+    footer {
+      background-color: #ffffff;
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9em;
+      border-top: 2px solid #d9e2ef;
+      margin-top: 40px;
+    }
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 2.5em;
+      }
+      nav ul {
+        flex-direction: column;
+        align-items: center;
+      }
+      .card {
+        padding: 20px;
+      }
+    }
+  
+/* Schedule Section Styles */
+.schedule-section {
+  margin-top: 60px;
+}
+.schedule-section h2 {
+  color: #004080;
+  margin-bottom: 10px;
+}
+.schedule-section p {
+  color: #555;
+  margin-bottom: 40px;
+}
+.session-group {
+  text-align: left;
+  margin-bottom: 50px;
+}
+.session-title {
+  display: block;
+  background-color: #e1ecf7;
+  color: #2a5d9f;
+  font-weight: bold;
+  padding: 6px 16px;
+  border-radius: 10px;
+  margin: 24px 0 12px 0;
+  font-size: 1rem;
+  font-family: "Segoe UI", "Helvetica Neue", sans-serif;
+  text-align: left;
+}
+.session-card {
+  background: rgba(255, 255, 255, 0.85);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  border-radius: 15px;
+  padding: 20px 30px;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+}
+.session-time {
+  font-weight: bold;
+  color: #555;
+  margin-bottom: 10px;
+}
+.session-name {
+  font-weight: bold;
+  color: #004080;
+  font-size: 1.2em;
+  margin-bottom: 5px;
+}
+.session-location {
+  font-size: 0.95em;
+  color: #777;
+  margin-bottom: 5px;
+}
+.session-description {
+  font-size: 0.95em;
+  color: #555;
+}
+
+h2 {
+  color: #004080;
+  font-size: 2em;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.session-title {
+  background-color: #cfe5ff;
+  display: inline-block;
+  padding: 8px 16px;
+  border-radius: 12px;
+  font-weight: bold;
+  color: #004080;
+  font-size: 1.2em;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+</style>
+</head>
+<body>
+
+<header>
+  <div class="logo">
+    <img src="leeds_logo.png" alt="University of Leeds Logo">
+  </div>
+  <h1>LEEDS-HULL TESOL 2025 CONFERENCE</h1>
+</header>
+
+<nav>
+  <ul>
+    <li><a href="#speakers">Speakers</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#highlights">Highlights</a></li>
+    <li><a href="#abstracts">Abstracts</a></li>
+    <li><a href="#schedule">Schedule</a></li>
+    <li><a href="#location">Location</a></li>
+    <li><a href="#past">Past Conferences</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
+
+<main>
+  
+   <section id="speakers" class="card">
+  <h2>Keynote Speakers</h2>
+  <!-- Speaker: Professor Graham Hall -->
+<div style="background: #ffffff; padding: 60px 0;">
+  <div style="max-width: 1000px; margin: auto;">
+    <img src="graham_hall.png"
+         alt="Professor Graham Hall"
+         style="width: 220px; float: left; margin: 0 30px 20px 0; border-radius: 12px; box-shadow: 0 4px 10px rgba(0,0,0,0.15); object-fit: cover;">
+
+    <h3 style="color: #336699; font-size: 28px; margin-bottom: 10px;">Professor Graham Hall</h3>
+    <p style="font-weight: bold; line-height: 1.7;">Professor Emeritus in Applied Linguistics and TESOL.</p>
+
+    <p style="line-height: 1.8;">
+      Graham has been involved in English language teaching for over 30 years, as a teacher, teacher educator and researcher. His book <i>'Exploring English Language Teaching: language in action'</i> (2011/2017) was awarded the BAAL Book Prize, and he edited <i>ELT Journal</i> (2013–17) and <i>The Routledge Handbook of ELT</i> (2015).
+    </p>
+    <p style="line-height: 1.8;">
+      His most recent publication is <i>'Method and Postmethod in Language Teaching'</i> (Routledge; 2024). Graham's professional interests range from language classroom methodology to critical perspectives on TESOL, teacher research, and the inter-relationship between language learning and migration.
+    </p>
+
+    <div style="clear: both;"></div>
+  </div>
+</div>
+
+<!-- 分隔线 + 间隔 -->
+<hr style="border: none; border-top: 1px solid #ccc; margin: 80px auto; width: 65%;">
+
+<!-- Speaker: Dr Martin Lamb -->
+<div style="background: #f9f9f9; padding: 60px 0;">
+  <div style="max-width: 1000px; margin: auto;">
+    <img src="16bef4c1-ad07-41e4-9367-9d3017c0e8da.png"
+         alt="Dr Martin Lamb"
+         style="width: 330px; float: right; margin: 0 0 20px 30px; border-radius: 12px; box-shadow: 0 6px 12px rgba(0,0,0,0.15); object-fit: cover;">
+
+    <h3 style="color: #336699; font-size: 28px; margin-bottom: 10px;">Dr Martin Lamb</h3>
+    <p style="font-weight: bold; line-height: 1.7; margin-bottom: 1.2rem;">Director of International Education, University of Leeds</p>
+
+    <p style="line-height: 1.8; margin-bottom: 1.2rem;">
+      Martin has taught and trained English teachers in Indonesia, Bulgaria, Sweden and Saudi Arabia, and joined the University of Leeds in 1999. He has coordinated large-scale TESOL programmes in Oman and China, and currently leads the MA TESOL (China) in partnership with Guangdong University of Foreign Studies.
+    </p>
+
+    <p style="line-height: 1.8; margin-bottom: 1.2rem;">
+      His research explores how teacher personality and classroom practices shape student motivation. A recent British Council-funded project examined what makes English teaching ‘inspiring’ in schools across China and Indonesia.
+    </p>
+
+    <p style="line-height: 1.8; margin-bottom: 1.2rem;"><strong>Keynote Title:</strong> <em>The Emotional Roller Coaster of the First Years of Teaching</em></p>
+
+    <p style="line-height: 1.8;">
+      This talk reflects on the emotional challenges of early-career teachers, and how these shape their identities and professional growth.
+    </p>
+
+    <div style="clear: both;"></div>
+  </div>
+</div>
+
+
+
+</section>
+
+<section id="about" class="card" style="line-height: 2.5;">
+  <h2>About the Conference</h2>
+  <p><strong>LEEDS-HULL TESOL 2025 CONFERENCE</strong> is an annual conference held by and for TESOL students. This conference is a platform for TESOL students to engage in meaningful dialogues and exchange innovative ideas related to their ongoing research projects.</p>
+
+  <p><strong>Venue</strong>: Depending on the kinds of presentations, all the talks will be delivered in one of these places:</p>
+  <ul>
+    <li><strong>Business School</strong> – G.02 (216 Lecture Style)</li>
+    <li><strong>Clarendon Building</strong> – GR.01 (Catering)</li>
+    <li><strong>Clarendon Building</strong> – SR 1.01 (Classroom Style, approx. 50 seats)</li>
+    <li><strong>Clarendon Building</strong> – SR 1.02 (Classroom Style, approx. 50 seats)</li>
+    <li><strong>Clarendon Building</strong> – SR 1.03 (Classroom Style, approx. 50 seats)</li>
+  </ul>
+
+  <p><strong>Date</strong>: 4th July 2025</p>
+
+  <p><strong>Time</strong>:</p>
+  <ul>
+    <li>10:00–16:30</li>
+  </ul>
+</section>
+
+<section id="highlights" class="card">
+  <h2>Conference Highlights</h2>
+  <div class="highlight-flex" style="display: flex; flex-wrap: wrap; gap: 40px; align-items: center;">
+    <div class="highlight-image" style="flex: 1 1 400px;">
+      <img src="afternoon_tea.jpg" alt="Afternoon Tea at the Conference" style="width: 100%; border-radius: 16px; box-shadow: 0 6px 16px rgba(0,0,0,0.1); object-fit: cover;">
+    </div>
+    <div class="highlight-text" style="flex: 1 1 400px; font-size: 1.1em; line-height: 1.9; color: #333;">
+      <p><strong>Free lunch and tea breaks</strong> are available for all attendees. Relax and recharge with complimentary refreshments, including a delightful selection of afternoon tea options.</p>
+      <p>🎓 You’ll also receive an <strong>official certificate of participation</strong> — perfect for enhancing your academic and professional portfolio.</p>
+    </div>
+  </div>
+</section>
+
+<section id="why-join" class="card">
+  <h2>Why Join the Conference?</h2>
+  <div class="why-join-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 30px; margin-top: 30px;">
+    <div class="why-item" style="text-align: center;">
+      <div class="why-icon" style="font-size: 2.5em;">🌟</div>
+      <h3 style="margin-top: 10px;">Expand Your Network</h3>
+      <p style="margin-top: 5px;">Connect with TESOL professionals, researchers, and peers from around the world.</p>
+    </div>
+    <div class="why-item" style="text-align: center;">
+      <div class="why-icon" style="font-size: 2.5em;">🧠</div>
+      <h3 style="margin-top: 10px;">Gain Fresh Insights</h3>
+      <p style="margin-top: 5px;">Attend keynote speeches, seminars, and panel discussions covering the latest trends in TESOL.</p>
+    </div>
+    <div class="why-item" style="text-align: center;">
+      <div class="why-icon" style="font-size: 2.5em;">🎯</div>
+      <h3 style="margin-top: 10px;">Enhance Your Skills</h3>
+      <p style="margin-top: 5px;">Participate in hands-on workshops to improve your teaching and research techniques.</p>
+    </div>
+    <div class="why-item" style="text-align: center;">
+      <div class="why-icon" style="font-size: 2.5em;">🌎</div>
+      <h3 style="margin-top: 10px;">Broaden Your Perspective</h3>
+      <p style="margin-top: 5px;">Engage with a global community and explore diverse approaches to language education.</p>
+    </div>
+    <div class="why-item" style="text-align: center;">
+      <div class="why-icon" style="font-size: 2.5em;">📚</div>
+      <h3 style="margin-top: 10px;">Get Inspired</h3>
+      <p style="margin-top: 5px;">Discover innovative ideas and practical strategies to apply in your academic or professional journey.</p>
+    </div>
+    <div class="why-item" style="text-align: center;">
+      <div class="why-icon" style="font-size: 2.5em;">🏆</div>
+      <h3 style="margin-top: 10px;">Showcase Your Research</h3>
+      <p style="margin-top: 5px;">Present your work and receive valuable feedback from peers and experts in the TESOL field.</p>
+    </div>
+  
+
+</div>
+
+<section id="abstracts" class="card">
+  <h2>Presentation Abstracts</h2>
+  <input type="text" id="searchInput" onkeyup="searchTable()" placeholder="Search for presentations..." style="width: 90%; max-width: 500px; padding: 10px; margin: 20px auto; display: block; border-radius: 10px; border: 1px solid #ccc;">
+
+  <div style="overflow-x:auto;">
+    <table id="abstractsTable">
+      <thead>
+        <tr>
+          <th>Number</th>
+          <th>Presenter</th>
+          <th>Title</th>
+        </tr>
+      </thead>
+  <tbody>
+    <tr><td>1</td><td>Shihui Liu</td><td>What matters to online English learners: A comparative content and sentiment analysis of learner reviews on YouTube and Coursera</td></tr>
+    <tr><td>2</td><td>Anh Duc Dinh</td><td>On Becoming Autonomous: Exploring Pre-service Teacher Autonomy in Initial Professional Identity with Possible-selves Theory</td></tr>
+    <tr><td>3</td><td>Yidi Wang</td><td>Fostering Target Language Use Through Emotionally Supportive Teaching Materials</td></tr>
+    <tr><td>4</td><td>Xuan Wang</td><td>How to Enhance Low-proficiency Level Listeners in Decoding</td></tr>
+    <tr><td>5</td><td>Huiying Ma</td><td>Exploring the Development of English Assessment in the High School Entrance Examination (Zhongkao) in China</td></tr>
+    <tr><td>6</td><td>Honghan Wang</td><td>Supporting Bilingual Development: Navigating Cross-linguistic influence in Early Language Acquisition</td></tr>
+    <tr><td>7</td><td>Noviachri Imroatul Sa</td><td>The Effectiveness of Animated Videos for Grammar Learning: A Quasi-Experimental Study in Rural Indonesia</td></tr>
+    <tr><td>8</td><td>Ye MA</td><td>Enhancing the Effectiveness of Films in EFL Listening Classes for Young Learners</td></tr>
+    <tr><td>9</td><td>Yiru Jiang</td><td>Optimizing the Prewriting Stage to Alleviate Problems in Continuation Writing</td></tr>
+    <tr><td>10</td><td>Jiaqiong Wang</td><td>An Educational Case Study on Chinese Traditional Culture: Paper Cutting</td></tr>
+    <tr><td>11</td><td>Firda Fauziyah</td><td>Demonstrating Materials Adaptation of Senior High School English Government Coursebook in Indonesia</td></tr>
+    <tr><td>12</td><td>Liujin Li</td><td>From Exploration to Commitment: How the EDUC 5928 Portfolio Shaped My Dissertation Path</td></tr>
+    <tr><td>13</td><td>Anh Duc Dinh</td><td>Becoming Autonomous: Exploring Vietnamese EFL Pre-service Teachers’ Professional Identity through the Lens of Possible Selves</td></tr>
+    <tr><td>14</td><td>Sara Al Balushi</td><td>Using Masuhara's (2003) Alternative Approach to Design Reading Materials</td></tr>
+    <tr><td>15</td><td>Jiexuan Liu</td><td>The important role of translation in English learning</td></tr>
+    <tr><td>16</td><td>Huria Moosa Al B</td><td>The Development Process and Rationale Behind the Design of the Pedagogical Game: 'Fatima’s Quest'</td></tr>
+    <tr><td>17</td><td>Tuti Awaliyah</td><td>Learning from Failure: Reflections on EMI Implementation in an Indonesian High School</td></tr>
+    <tr><td>18</td><td>Yili Wang</td><td>Challenges and Insights in the Dissertation Writing From A TESOL Student's Perspective</td></tr>
+    <tr><td>19</td><td>Suci Amaliyah</td><td>METACOGNITIVE STRATEGIES IN IELTS WRITING: A COMPARATIVE STUDY BETWEEN HIGH ACHIEVER AND STRUGGLING LEARNER</td></tr>
+    <tr><td>20</td><td>Nentis</td><td>Learners' Difficulties in Processing Rapid Speech and Recognizing Vocabulary in Listening Activities</td></tr>
+  </tbody>
+    </table>
+  </div>
+</section>
+
+<style>
+#abstractsTable {
+  width: 95%;
+  margin: auto;
+  border-collapse: collapse;
+  table-layout: auto;
+  font-size: 16px;
+}
+
+#abstractsTable th {
+  background-color: #d0e7ff;
+  color: #004080;
+  text-align: left;
+  padding: 12px 8px;
+  border-bottom: 2px solid #ccc;
+  white-space: nowrap;
+  height: 60px;
+}
+
+#abstractsTable td {
+  padding: 12px 8px;
+  vertical-align: middle;
+  line-height: 1.4;
+  border-bottom: 1px solid #ddd;
+  word-break: break-word;
+  height: 80px;
+  transition: all 0.3s ease;
+}
+
+/* 序号列 */
+#abstractsTable td:nth-child(1) {
+  text-align: center;
+  font-weight: bold;
+  white-space: nowrap;
+  color: #004080;
+}
+
+/* Presenter 列 */
+#abstractsTable td:nth-child(2) {
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+/* Title 列 */
+#abstractsTable td:nth-child(3) {
+  text-align: justify;
+  font-style: normal;
+  color: #333;
+}
+
+/* ✅ 悬停行效果 */
+#abstractsTable tbody tr:hover {
+  background-color: #eef6ff;
+  transform: scale(1.01);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+</style>
+
+<!-- ✅ 搜索功能 JS -->
+<script>
+function searchTable() {
+  const input = document.getElementById("searchInput");
+  const filter = input.value.toUpperCase();
+  const table = document.getElementById("abstractsTable");
+  const tr = table.getElementsByTagName("tr");
+
+  for (let i = 1; i < tr.length; i++) {
+    const tds = tr[i].getElementsByTagName("td");
+    let show = false;
+
+    for (let j = 0; j < tds.length; j++) {
+      const td = tds[j];
+      if (td && td.textContent.toUpperCase().indexOf(filter) > -1) {
+        show = true;
+        break;
+      }
+    }
+
+    tr[i].style.display = show ? "" : "none";
+  }
+}
+</script>
+
+<section id="schedule" class="schedule-section card">
+  <h2>Conference Schedule</h2>
+
+  <!-- 全部 schedule 内容将替换为这里的完整日程 -->
+
+<div class="schedule-group">
+  <div class="session-title">09:30 – 10:00</div>
+  <div class="session-card inner-card">
+    <div class="session-time">Registration</div>
+    <div class="session-location">📍 Foyer – Participant check-in and materials collection</div>
+  </div>
+</div>
+
+<div class="schedule-group">
+  <div class="session-title">10:00 – 11:00</div>
+  <div class="session-card inner-card">
+    <div class="session-time">Welcome remarks by Professor Alice Deigan</div>
+    <div class="session-location">📍 Main Lecture Room</div>
+    <div class="session-description">Keynote Speech by Dr Graham Hall – <em>Own language use in the language classroom: why, when and how</em></div>
+  </div>
+</div>
+
+<div class="schedule-group">
+  <div class="session-title">11:10 – 11:30</div>
+  <div class="session-card inner-card">
+    <div class="session-time">Fostering Target Language Use Through Emotionally Supportive Teaching Materials</div>
+    <div class="session-location">📍 Room 1 – Yidi Wang</div>
+  </div>
+  <div class="session-card inner-card">
+    <div class="session-time">How to Enhance Low-proficiency Level Listeners in Decoding</div>
+    <div class="session-location">📍 Room 2 – Xuan Wang</div>
+  </div>
+  <div class="session-card inner-card">
+    <div class="session-time">Metacognitive Strategies in IELTS Writing</div>
+    <div class="session-location">📍 Room 3 – Suci Amaliyah</div>
+  </div>
+</div>
+
+<div class="schedule-group">
+  <div class="session-title">11:30 – 11:50</div>
+  <div class="session-card inner-card">
+    <div class="session-time">The Effectiveness of AI-powered Oral English Learning Apps</div>
+    <div class="session-location">📍 Room 1 – Xi Liu</div>
+  </div>
+  <div class="session-card inner-card">
+    <div class="session-time">The Construction of a Vocabulary Knowledge Test Based on Lexical Coverage of EAP Textbooks</div>
+    <div class="session-location">📍 Room 2 – Wendi Bai</div>
+  </div>
+  <div class="session-card inner-card">
+    <div class="session-time">Learning English Through Gamified AI Apps: Opportunities and Challenges</div>
+    <div class="session-location">📍 Room 3 – Junyan Zhong</div>
+  </div>
+</div>
+
+<div class="schedule-group">
+  <div class="session-title">11:50 – 12:10</div>
+  <div class="session-card inner-card">
+    <div class="session-time">Coffee and tea break</div>
+    <div class="session-location">📍 Catering Area</div>
+  </div>
+</div>
+
+<div class="schedule-group">
+  <div class="session-title">12:10 – 12:30</div>
+  <div class="session-card inner-card">
+    <div class="session-time">An Educational Case Study on Chinese Traditional Culture: Paper Cutting</div>
+    <div class="session-location">📍 Room 1 – Jiaqiong Wang</div>
+  </div>
+  <div class="session-card inner-card">
+    <div class="session-time">Demonstrating Materials Adaptation of Senior High School English Government Coursebook in Indonesia</div>
+    <div class="session-location">📍 Room 2 – Firda Fauziyah</div>
+  </div>
+  <div class="session-card inner-card">
+    <div class="session-time">The Important Role of Translation in English Learning</div>
+    <div class="session-location">📍 Room 3 – Jiexuan Liu</div>
+  </div>
+</div>
+
+<div class="schedule-group">
+  <div class="session-title">12:30 – 12:50</div>
+  <div class="session-card inner-card">
+    <div class="session-time">Learners' Difficulties in Processing Rapid Speech and Recognizing Vocabulary in Listening Activities</div>
+    <div class="session-location">📍 Room 1 – Nentis</div>
+  </div>
+  <div class="session-card inner-card">
+    <div class="session-time">Enhancing the Effectiveness of Films in EFL Listening Classes for Young Learners</div>
+    <div class="session-location">📍 Room 2 – Ye Ma</div>
+  </div>
+  <div class="session-card inner-card">
+    <div class="session-time">The Effectiveness of Animated Videos for Grammar Learning</div>
+    <div class="session-location">📍 Room 3 – Noviachri Imroatul Sadiyah</div>
+  </div>
+</div>
+
+<div class="schedule-group">
+  <div class="session-title">12:50 – 13:30</div>
+  <div class="session-card inner-card">
+    <div class="session-time">Lunch</div>
+    <div class="session-location">📍 Dining Room – Grab-and-go Lunch</div>
+  </div>
+</div>
+
+<div class="schedule-group">
+  <div class="session-title">13:30 – 13:50</div>
+  <div class="session-card inner-card">
+    <div class="session-time">Supporting Bilingual Development: Navigating Cross-linguistic Influence in Early Language Acquisition</div>
+    <div class="session-location">📍 Room 1 – Honghan Wang</div>
+  </div>
+  <div class="session-card inner-card">
+    <div class="session-time">Using Masuhara's (2003) Alternative Approach to Design Reading Materials</div>
+    <div class="session-location">📍 Room 2 – Sara Al Balushi</div>
+  </div>
+  <div class="session-card inner-card">
+    <div class="session-time">Exploring the Development of English Assessment in the High School Entrance Examination (Zhongkao) in China</div>
+    <div class="session-location">📍 Room 3 – Huiying Ma</div>
+  </div>
+</div>
+
+<div class="schedule-group">
+  <div class="session-title">13:50 – 14:10</div>
+  <div class="session-card inner-card">
+    <div class="session-time">The Development Process and Rationale Behind the Design of the Pedagogical Game: "Fatima’s Quest"</div>
+    <div class="session-location">📍 Room 1 – Huria Moosa Al Balushi</div>
+  </div>
+  <div class="session-card inner-card">
+    <div class="session-time">Challenges and Insights in the Dissertation Writing From A TESOL Student's Perspective</div>
+    <div class="session-location">📍 Room 2 – Yili Wang</div>
+  </div>
+</div>
+
+<div class="schedule-group">
+  <div class="session-title">14:10 – 14:30</div>
+  <div class="session-card inner-card">
+    <div class="session-time">Addressing Fricative Sound Errors /θ/ and /ð/ Through a Singing-Based Pronunciation Activity</div>
+    <div class="session-location">📍 Room 1 – Tuti Awaliyah</div>
+  </div>
+  <div class="session-card inner-card">
+    <div class="session-time">From Exploration to Commitment: How the EDUC 5928 Portfolio Shaped My Dissertation Path</div>
+    <div class="session-location">📍 Room 2 – Liujin Li</div>
+  </div>
+</div>
+
+<div class="schedule-group">
+  <div class="session-title">14:30 – 14:50</div>
+  <div class="session-card inner-card">
+    <div class="session-time">Coffee and tea break</div>
+    <div class="session-location">📍 Catering Area</div>
+  </div>
+</div>
+
+<div class="schedule-group">
+  <div class="session-title">15:00 – 15:30</div>
+  <div class="session-card inner-card">
+    <div class="session-time">2nd Keynote Speech by Dr Martin Lamb</div>
+    <div class="session-location">📍 Main Lecture Room</div>
+  </div>
+</div>
+
+<div class="schedule-group">
+  <div class="session-title">15:30 – 16:00</div>
+  <div class="session-card inner-card">
+    <div class="session-time">Closing Remarks by Dr Laura Grassick</div>
+    <div class="session-location">📍 Main Lecture Room</div>
+    <div class="session-description">Certificate Awarding & Lucky Draw</div>
+  </div>
+</div>
+
+</section>
+
+</body>
+</html>
+
+<style>
+.schedule-section {
+  font-family: "Segoe UI", "Helvetica Neue", sans-serif;
+  line-height: 2;
+}
+
+.schedule-section h2 {
+  color: #004080;
+  margin-bottom: 20px;
+  font-size: 2em;
+  font-weight: bold;
+  text-align: center;
+}
+
+.session-card {
+  background-color: #ffffff;
+  border-radius: 15px;
+  padding: 20px 30px;
+  margin-bottom: 20px;
+  box-shadow:
+    0 4px 8px rgba(0, 0, 0, 0.1),      /* 外层阴影 - 轻微浮起 */
+    inset 0 1px 0 rgba(255, 255, 255, 0.6),  /* 内部高光 - 顶部亮光 */
+    inset 0 -1px 2px rgba(0, 0, 0, 0.05);   /* 内部阴影 - 底部暗部 */
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.session-card:hover {
+  transform: scale(1.02);
+  box-shadow:
+    0 8px 20px rgba(0, 0, 0, 0.15),    /* 悬停时更明显的外部阴影 */
+    inset 0 1px 0 rgba(255, 255, 255, 0.6),
+    inset 0 -1px 2px rgba(0, 0, 0, 0.05);
+}
+
+.session-card:hover {
+  transform: scale(1.02);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1); /* 悬停时更明显的浮起感 */
+}
+
+.session-time {
+  font-weight: bold;
+  color: #333333;
+  font-size: 1.1em;
+  margin-bottom: 6px;
+  text-align: left;
+}
+
+.session-name {
+  font-weight: bold;
+  color: #004080;
+  font-size: 1.3em;
+  margin-bottom: 4px;
+}
+
+.session-location,
+.session-description {
+  font-size: 1.1em;
+  color: #333333;
+}
+
+.session-title {
+  display: inline-block; /* 只占内容宽度 */
+  background-color: #e1ecf7;
+  color: #2a5d9f;
+  font-weight: 600;
+  padding: 4px 12px;
+  border-radius: 8px;
+  font-size: 0.95em;
+  margin: 20px 0 10px 0;
+  font-family: "Segoe UI", "Helvetica Neue", sans-serif;
+}
+</style>
+
+ <section id="location" class="card">
+  <h2>Location</h2>
+  <p>The conference will be hosted at the University of Leeds campus, offering state-of-the-art facilities in the heart of the city.</p>
+
+  <!-- Google Maps – Leeds University Business School -->
+  <div class="map-container" style="margin-top: 20px;">
+    <iframe
+      src="https://maps.google.com/maps?q=Leeds%20University%20Business%20School%20UK&output=embed"
+      width="100%" height="400"
+      style="border:0;"
+      allowfullscreen=""
+      loading="lazy">
+    </iframe>
+  </div>
+</section>
+
+
+ <section id="past" class="card">
+  <h2>Past Conferences</h2>
+  <p>
+    Over the years, the Leeds-Hull TESOL conference series has attracted thousands of participants worldwide,
+    advancing the field of TESOL through collaboration and innovation.
+  </p>
+  <div class="photo-wall-wrapper">
+    <button class="photo-btn left">&#10094;</button>
+    <div class="photo-wall" id="photoWall">
+      <div class="photo-track" id="photoTrack">
+        <img src="Unknown-1.jpeg" alt="Conference Presentation 1">
+        <img src="Unknown.jpeg" alt="Certificate Awarding">
+        <img src="IMG_3203.jpeg" alt="Volunteer Team">
+        <img src="33f85d3a162dfdd7327822507ed02f65.jpeg" alt="Keynote Speaker">
+        <img src="5cdd2f8cac439230e874f8023ff86024.jpeg" alt="Roundtable Discussion">
+        <img src="0b08fb23f649232db8022d8f607d2149.jpeg" alt="Student Presentation">
+      </div>
+    </div>
+    <button class="photo-btn right">&#10095;</button>
+  </div>
+</section>
+
+<!-- Lightbox Overlay -->
+<div id="lightboxOverlay" class="lightbox-overlay">
+  <img id="lightboxImage" src="" alt="Full Image">
+</div>
+
+<style>
+.photo-wall-wrapper {
+  position: relative;
+  overflow: hidden;
+}
+
+.photo-wall {
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  padding: 20px 0;
+}
+
+.photo-track {
+  display: flex;
+  gap: 24px;
+  padding: 10px 20px;
+}
+
+.photo-track img {
+  height: 260px;
+  border-radius: 12px;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.photo-track img:hover {
+  transform: scale(1.05);
+}
+
+.photo-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0,0,0,0.4);
+  border: none;
+  color: white;
+  font-size: 2rem;
+  padding: 6px 12px;
+  cursor: pointer;
+  z-index: 2;
+  border-radius: 50%;
+}
+.photo-btn.left { left: 10px; }
+.photo-btn.right { right: 10px; }
+
+/* Lightbox 全屏查看样式 */
+.lightbox-overlay {
+  display: none;
+  position: fixed;
+  top: 0; left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.95);
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+}
+.lightbox-overlay.active img {
+  animation: zoomIn 0.3s ease;
+}
+
+@keyframes zoomIn {
+  from {
+    transform: scale(0.8);
+    opacity: 0.5;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.lightbox-overlay img {
+  max-width: 90vw;
+  max-height: 90vh;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  transition: transform 0.3s ease;
+}
+
+.lightbox-overlay img:hover {
+  transform: scale(1.01);
+}
+
+</style>
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  // ➤ 添加滑动功能
+  const photoWall = document.getElementById("photoWall");
+  const btnLeft = document.querySelector(".photo-btn.left");
+  const btnRight = document.querySelector(".photo-btn.right");
+
+  btnLeft.addEventListener("click", () => {
+    photoWall.scrollBy({
+      left: -photoWall.offsetWidth * 0.8,
+      behavior: "smooth"
+    });
+  });
+
+  btnRight.addEventListener("click", () => {
+    photoWall.scrollBy({
+      left: photoWall.offsetWidth * 0.8,
+      behavior: "smooth"
+    });
+  });
+
+  // ➤ 保留原来的 lightbox 功能
+  const images = document.querySelectorAll(".photo-track img");
+  const lightbox = document.getElementById("lightboxOverlay");
+  const lightboxImg = document.getElementById("lightboxImage");
+
+  if (!images.length) return;
+  if (!lightbox || !lightboxImg) return;
+
+  images.forEach(img => {
+    img.addEventListener("click", () => {
+      lightboxImg.src = img.src;
+      lightbox.classList.add("active");
+    });
+  });
+
+  lightbox.addEventListener("click", () => {
+    lightbox.classList.remove("active");
+  });
+
+  document.addEventListener("keydown", (e) => {
+    if (e.key === "Escape") {
+      lightbox.classList.remove("active");
+    }
+  });
+});
+</script>
+
+ <section id="contact" class="card" style="text-align: center;">
+  <h2>Contact Information</h2>
+  <p style="font-size: 1.15em; line-height: 1.8; max-width: 700px; margin: 0 auto 20px;">
+    If you have any questions or need further information, feel free to reach out!
+  </p>
+
+  <div style="font-size: 1.1em; margin-bottom: 20px;">
+    📧 Email us at:
+    <br>
+    <a href="mailto:leedshulltesolcon2025@outlook.com" style="color: #336699; font-weight: bold;">
+      leedshulltesolcon2025@outlook.com
+    </a>
+  </div>
+</section>
+</main>
+
+<footer>
+  <p>© 2025 LEEDS-HULL TESOL Conference. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
